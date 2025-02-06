@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(8, 166, 234); 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; 
+    position: fixed; 
+    top: 0;
+    z-index: 1000; 
+}
+
+.nav-address {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: auto;
+    font-size: larger;
+    font-family: serif;
+}
+
+.add-icon i {
+    color: white;
+    margin-left: 10px;
+}
+
+.nav-address p {
+    color: white;
+    margin: 0;
+}
+
+.talk {
+    padding: 10px 20px;
+    font-size: 27px;
+    color: rgb(2, 9, 20);
+    border: none;
+    border-radius: 35px;
+    cursor: default;
+    margin-bottom: 30px;
+    font-family: serif;
+}
+
+.talk:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    font-size: 25px;
+    color: white;
+    font-family: serif;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.name {
+    font-family: 'Times New Roman', Times, serif;  
+    font-size: 50px;
+    line-height: 170%;
+    color: rgb(9, 181, 233);
+}
